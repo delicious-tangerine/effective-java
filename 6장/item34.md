@@ -96,3 +96,6 @@ public static Optional<Operation> fromString(String symbol) {
     return Optional.ofNullable(stringToEnum.get(symbol));
 }
 ```
+
+---
+enum에 관한 좋은 글 : https://woowabros.github.io/tools/2017/07/10/java-enum-uses.html
