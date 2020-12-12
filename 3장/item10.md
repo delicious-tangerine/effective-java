@@ -8,7 +8,7 @@
 ## `equals 메소드를 재정의 하면 안되는 경우`
 
 - ### 각 인스턴스가 본질적으로 고유하다
-    - 값을 표현하는 게 아니라 동작하는 개체를 표현하는 클래스가 여기 해당합니다. ex) Thread, Bean으로 등록하는 객체(Repository, Server, Controller)가 있을 것 같습니다.
+    - 값을 표현하는 게 아니라 동작하는 개체를 표현하는 클래스가 여기 해당합니다. ex) Thread, Bean으로 등록하는 객체(Repository, Service, Controller)가 있을 것 같습니다.
     
 - ### 인스턴스의 '논리적 동치성(logical equality)'을 검사할 일이 없다. 
     - java.util.regex.Pattern은 Object의 기본 equals만으로 해결됩니다.
@@ -231,7 +231,7 @@ public final class phoneNumber {
 
 - equals를 재정의할 땐 hashCode도 반드시 재정의해야 합니다.
 - 필드들의 동치성만 검사해도 equals 규약을 어렵지 않게 지킬 수 있습니다. 예를들어, File 클래스라면, 심볼릭 링크를 비교해 같은 파일을 가리키는지를 확인하려 하면 안됩니다. 
-- Object 외의 타입을 매게변로 받는 equals 메소드는 선언하면 안됩니다. 
+- Object 외의 타입을 매게변수로 받는 equals 메소드는 선언하면 안됩니다. 
 
 ```java
 public class Test {

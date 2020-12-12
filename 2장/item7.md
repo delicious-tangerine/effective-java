@@ -103,7 +103,7 @@ public class Stack {
 import java.util.HashMap;
 import java.util.Map;
 
-public class Test1 {
+public class Test {
     public static void main(String[] args) {
         Map<Foo, String> map = new HashMap<>();
 
@@ -113,12 +113,14 @@ public class Test1 {
         key = null;
         System.gc();
 
-        map.keySet().forEach(System.out::print); // ExampleCode.Testing.Foo@6e0be858
+        System.out.println(map.keySet().isEmpty());  // false
     }
 }
 ```
  
 위와 같이 `HashMap`을 사용해서 캐시를 만들게 되면 key = null로 만들어도 false가 나오는 것을 볼 수 있습니다. 
+
+<br>
 
 그러면 `WeakHashMap`을 사용하면 어떻게 될까요?
 
@@ -136,7 +138,7 @@ public class Test1 {
         key = null;
         System.gc();
 
-        map.keySet().forEach(System.out::print);
+        map.keySet().forEach(System.out::print);  // 아무 것도 출력되지 않음
     }
 }
 ```

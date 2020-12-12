@@ -35,6 +35,8 @@ class KoreanDictionary implements Lexicon {}
 
 그리고 이번에는 `싱글턴`으로 구현하는 예시를 보겠습니다.
 
+<br>
+
 ## `싱글턴으로 이용한 예시`
 
 ```java
