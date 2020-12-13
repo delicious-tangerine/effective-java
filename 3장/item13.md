@@ -38,8 +38,8 @@ x.clone().getClass() == x.getClass()
 > B.clone() → B 타입 객체 반환해야함
 
 > 💡 그런데 A.clone()이 자신의 생성자 new A(..)로 생성한 객체를 반환
-> A.clone() → new A(..) → A 타입 객체 반환
-> B.clone() → super.clone() → A 타입 객체를 반환
+> - A.clone() → new A(..) → A 타입 객체 반환
+> - B.clone() → super.clone() → A 타입 객체를 반환
 > **하위 클래스에서 super.clone 호출시 잘못된 클래스의 객체가 만들어져서 .clone() 제대로 동작X**
 
 - final 클래스라면 clone()을 재정의 했어도 하위클래스가 없으므로 이 [관례]를 무시해도 안전 (그래도 성능 최적화 관점, 특히 thread,, 에서 검토 후 판단)
