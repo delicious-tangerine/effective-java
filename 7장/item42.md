@@ -2,7 +2,7 @@
 
 ### `낡은 기법의 익명 클래스 인스턴수 함수 객체`
 ```Java
-Collections.sort(words, new Comparator<String>) {
+Collections.sort(words, new Comparator<String>() {
     public int compare(String s1, String s2) {
         return Integer.compare(s1.length(), s2.length());
     }
