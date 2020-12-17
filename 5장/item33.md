@@ -7,7 +7,7 @@
 ### Type Token
 class 리터럴의 타입은 Class<T>다.
 
-즉, String.class의 타입은 Class<String>이고 Integer.class의 타입은 Class<Integer>이다.
+즉, String.class의 타입은 ```Class<String>```이고 Integer.class의 타입은 ```Class<Integer>```이다.
 
 이처럼 컴파일타임 타입 정보와 런타임 타입 정보를 위해 사용하는 class 리터럴을 타입 토큰(Type Token)이라고 한다.
 
