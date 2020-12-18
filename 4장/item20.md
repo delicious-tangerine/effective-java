@@ -50,7 +50,7 @@ static List<Integer> intArrayAsList(int[] a){
     Objects.requiredNull(a); 
 
     //다이아몬드 연산자는 자바9부터
-    // int배열을 받아 Integer 인스턴스의 리스트 형태로 보여줌 >> 어탭터
+    // int배열을 받아 Integer 인스턴스의 리스트 형태로 보여줌 >> 어댑터
     return new AbstractList<>(){
         @Override
         public Integer get(int i){
