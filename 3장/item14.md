@@ -51,7 +51,7 @@ sgn(x.compareTo(z)) == sgn(y.compareTo(z))
 
 > ⚡️정수 타입을 비교시 **관계연산자 <, >를 사용하는 방식은 지양** 하고 **정적메서드인 compare, 또는 Comparator 인터페이스가 제공하는 비교자 생성 메서드 사용**하자
 
-##### 1) 정적 메서드 coompare
+##### 1) 정적 메서드 compare
 ```java
 static Comparator<Object> hashCodeOrder = new Comparator<>(){
     public int compare(Object o1, Object o2) {
@@ -63,3 +63,16 @@ static Comparator<Object> hashCodeOrder = new Comparator<>(){
 ```java
 static Comparator<Object> hashCodeOrder = Comparator.comparingInt(o -> o.hashCode())
 ```
+
+
+<br/>
+
+-----
+
+<br/>
+
+##### 🍊 QUIZ 
+
+1. Cloneable을 사용하려면 이를 interface로 확장하거나, 새 클래스로 이것을 구현하기만 하면 된다. [O | X]
+2. 가변 상태를 참조한 clone 메서드는 클래스를 복제했을 시, 불변성을 해친다. [O | X]
+3. 배열을 clone하지 않는다면 대체로 Cloneable보다는 [　　　　] 과(와) [　　　　] 과(와)를 사용하자
