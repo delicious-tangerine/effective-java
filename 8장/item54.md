@@ -40,6 +40,7 @@ public class Test {
 2. 빈 컬렉션과 배열은 굳이 새로 할당하지 않고도 반환할 수 있습니다. (`새로 할당하지 않고도 .. 왜 일까요?`)
 
 ```java
+// 54-2
 public class Test {
     private final List<Cheese> cheesesInStock = new ArrayList<>();
 
@@ -66,7 +67,7 @@ public class Test {
 }
 ```
 
-emptyList 메소드가 `불변 컬렉션`의 예시입니다. 지금 코드의 예시가 매번 새로 할당하지 않는 예시의 코드일까요?
+emptyList 메소드가 `불변 컬렉션`의 예시입니다. 지금 코드의 예시가 매번 새로 할당하지 않는 예시의 라는데 질문 ! 
 
 <br>
 
