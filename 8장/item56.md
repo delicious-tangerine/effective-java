@@ -53,7 +53,7 @@ public boolean isEmpty() {
     return false;
 }
 ```
-1. ```@implSpec``` 태그 : 해당 메서드와 하우 클래스 사이의 계약을 설명하고, 메서드를 재정의 하는 방법을 알린다.
+1. ```@implSpec``` 태그 : 해당 메서드와 하위 클래스 사이의 계약을 설명하고, 메서드를 재정의 하는 방법을 알린다.
 2. 자바독 명령줄에서 ```-tag "implSpec:a:Implementation Requirements:"``` 스위치를 켜줘야  ```@implSpec```사용가능
 3. ```{@literal}```태그로 HTML메타문자나 온점을 무시 (코드폰트로 렌더링하지 않음)  
 
